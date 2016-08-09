@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
- get '/tasks' => ''
+ get '/tasks' => 'tasks#new'
 
 end
