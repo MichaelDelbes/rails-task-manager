@@ -1,18 +1,21 @@
 Rails.application.routes.draw do
 
-get '/index' => 'tasks#index'
+resources :tasks
 
-get '/show' => 'tasks#show'
 
-get '/new' => 'tasks#new'
+# get '/tasks' => 'tasks#index'
 
-get '/create' => 'tasks#create'
+# get '/tasks/:id' => 'tasks#show'
 
-get '/edit' => 'tasks#edit'
+# get '/tasks/new' => 'tasks#new'
 
-get '/update' => 'tasks#update'
+# post '/tasks' => 'tasks#create'
 
-get '/destroy' => 'tasks#destroy'
+# get '/tasks/:id/edit' => 'tasks#edit'
+
+# patch '/tasks/:id' => 'tasks#update'
+
+# delete '/tasks/:id' => 'tasks#destroy'
 
 
 end
